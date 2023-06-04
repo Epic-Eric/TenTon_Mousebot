@@ -23,16 +23,16 @@ std::string alliance = "Red";
 // ---------------- MOTORS ---------------- //
 // port - Motor Name
 // 1    - Left Motor
-// 2    - Right Motor
-// 3    - Arm Motor
-// 4    - Claw Motor
-// 5    - Tail Motor
+// 9    - Right Motor
+// 2    - Arm Motor
+// 20    - Claw Motor
+// 10    - Tail Motor
 
 pros::Motor leftMtr(1, pros::E_MOTOR_GEAR_BLUE);
-pros::Motor rightMtr(2, pros::E_MOTOR_GEAR_BLUE);
-pros::Motor armMtr(3, pros::E_MOTOR_GEAR_RED);
-pros::Motor clawMtr(4, pros::E_MOTOR_GEAR_BLUE);
-pros::Motor tailMtr(5, pros::E_MOTOR_GEAR_RED);
+pros::Motor rightMtr(9, pros::E_MOTOR_GEAR_BLUE);
+pros::Motor armMtr(2, pros::E_MOTOR_GEAR_RED);
+pros::Motor clawMtr(20, pros::E_MOTOR_GEAR_BLUE);
+pros::Motor tailMtr(10, pros::E_MOTOR_GEAR_RED);
 pros::MotorGroup left ({leftMtr});
 pros::MotorGroup right ({rightMtr});
 
