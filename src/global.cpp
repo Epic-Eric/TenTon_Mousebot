@@ -29,12 +29,12 @@ std::string alliance = "Red";
 // 10    - Tail Motor
 
 pros::Motor leftMtr(1, pros::E_MOTOR_GEAR_BLUE);
-pros::Motor rightMtr(9, pros::E_MOTOR_GEAR_BLUE);
-pros::Motor armMtr(2, pros::E_MOTOR_GEAR_RED);
-pros::Motor clawMtr(20, pros::E_MOTOR_GEAR_BLUE);
-pros::Motor tailMtr(10, pros::E_MOTOR_GEAR_RED);
-pros::MotorGroup left ({leftMtr});
-pros::MotorGroup right ({rightMtr});
+pros::Motor rightMtr(2, pros::E_MOTOR_GEAR_BLUE);
+pros::Motor leftMtr1(9, pros::E_MOTOR_GEAR_RED);
+pros::Motor rightMtr1(10, pros::E_MOTOR_GEAR_BLUE);
+pros::Motor tailMtr(4, pros::E_MOTOR_GEAR_RED);
+pros::MotorGroup left ({leftMtr, leftMtr1});
+pros::MotorGroup right ({rightMtr,rightMtr1});
 
 
 // ---------------- CONTROLLER ---------------- //
